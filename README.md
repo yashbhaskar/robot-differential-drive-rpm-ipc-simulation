@@ -63,7 +63,7 @@ mkdir -p ~/ros_ws/src && cd ~/ros_ws/src
 ```
 Clone the repository
 ```bash
-git clone https://github.com/yashbhaskar/robot-differential-drive-rpm-ipc-simulation.git
+git clone https://github.com/yashbhaskar/robot-differential-drive-rpm-simulation-with-ipc.git
 ```
 Navigate to the workspace
 ```bash
