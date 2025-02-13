@@ -29,7 +29,6 @@ rse_assignment/
 │── bag_files/
 │   └── rse_assignment.db3
 │── include/
-│   ├── rse_assignment
 │   ├── Httplib
 │       └── httplib.h
 │── README.md
