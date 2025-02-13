@@ -7,9 +7,9 @@ This project simulates the RPM (Revolutions Per Minute) control of a differentia
 
 ## 📌 Features
 ✅ Computes **wheel RPM** from `cmd_vel` (linear & angular velocity).⏲  
-✅ Implements **Inter-Process Communication (IPC)** for seamless data sharing.⚡
-✅ Provides **real-time visualization** using Python plotting to analyze robot behavior.📈
-✅ Data Logging: **Logs RPM data** and related parameters for analysis.💻
+✅ Implements **Inter-Process Communication (IPC)** for seamless data sharing.⚡  
+✅ Provides **real-time visualization** using Python plotting to analyze robot behavior.📈  
+✅ Data Logging: **Logs RPM data** and related parameters for analysis.💻  
 
 ---
 
