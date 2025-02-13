@@ -63,7 +63,7 @@ mkdir -p ~/ros_ws/src && cd ~/ros_ws/src
 ```
 Clone the repository
 ```bash
-git clone https://github.com/yourusername/robot-differential-drive-rpm-ipc.git rse_assignment
+git clone https://github.com/yashbhaskar/robot-differential-drive-rpm-ipc-simulation.git
 ```
 Navigate to the workspace
 ```bash
@@ -118,6 +118,7 @@ To run all components together:
 ros2 launch rse_assignment launch_all.py
 ```
 https://github.com/user-attachments/assets/212c8b2c-a5a5-45a0-84e4-4ce8347943e6
+
 This will:
 1. **Play a ROS bag file** with recorded motion data.🎥
 2. **Run script_a** to calculate RPM values from `cmd_vel`.🏎️
