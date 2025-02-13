@@ -37,19 +37,58 @@ Make sure you have the following installed:
 - **Matplotlib, Seaborn (for visualization)** 📊
 
 ### 🔹 Setup Instructions
+# ✅ Install ROS Dependencies
 ```bash
-# Clone the repository into your ROS workspace
-cd ~/ros_ws/src
-git clone https://github.com/yashbhaskar/robot-differential-drive-rpm-ipc-simulation.git
+# Install ROS 2 (if not already installed)
+sudo apt update && sudo apt install -y ros-humble-desktop
 
-# Navigate to the workspace root
-cd ~/ros_ws
+# Source ROS 2 setup file
+source /opt/ros/humble/setup.bash
+
+# Create a ROS 2 workspace
+mkdir -p ~/ros_ws/src && cd ~/ros_ws/src
+
+# Clone the repository
+git clone https://github.com/yourusername/robot-differential-drive-rpm-ipc.git rse_assignment
+
+# Navigate to the workspace
+cd ~/ros_ws/
+
+# Install dependencies
+rosdep install --from-paths src --ignore-src -r -y
 
 # Build the package
 colcon build --packages-select rse_assignment
 
 # Source the workspace
 source install/setup.bash
+```
+# ✅ Install C++ Dependencies
+Install C++ Compiler and Build Tools:
+```bash
+sudo apt update && sudo apt install -y build-essential cmake g++ gcc
+```
+Run the following command to install necessary C++ libraries:
+```bash
+sudo apt update && sudo apt install -y libhttplib-dev libjsoncpp-dev libboost-all-dev cmake
+```
+If libhttplib-dev is not available in your package manager, install it manually:
+```bash
+git clone https://github.com/yhirose/cpp-httplib.git
+cd cpp-httplib
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
+sudo make install
+```
+# ✅ Install Python Dependencies
+Install Python and Pip:
+```bash
+sudo apt install -y python3 python3-pip python3-venv
+```
+Use pip to install the required Python packages:
+```bash
+pip install requests dash plotly numpy matplotlib
 ```
 
 ### 🔹 Usage
@@ -58,6 +97,7 @@ To run all components together:
 ```bash
 ros2 launch rse_assignment launch_all.py
 ```
+
 This will:
 1. **Play a ROS bag file** with recorded motion data.🎥
 2. **Run script_a** to calculate RPM values from `cmd_vel`.🏎️
