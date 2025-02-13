@@ -34,7 +34,7 @@ Make sure you have the following installed:
 - **ROS 2 (Humble)** 🤖
 - **C++17 & Python3** 🛠️
 - **Colcon Build System** ⚙️
-- **Matplotlib (for visualization)** 📊
+- **Matplotlib, Seaborn (for visualization)** 📊
 
 ### 🔹 Setup Instructions
 ```bash
