@@ -35,32 +35,41 @@ Make sure you have the following installed:
 - **C++17 & Python3** 🛠️
 - **Colcon Build System** ⚙️
 - **Matplotlib, Seaborn (for visualization)** 📊
+- **Httplib (C++ library)** 📊
+- **Requests, Dash, Plotly, Numpy (Python Libraries)** 📊
 
 ### 🔹 Setup Instructions
 # ✅ Install ROS Dependencies
+Install ROS 2 (if not already installed)
 ```bash
-# Install ROS 2 (if not already installed)
 sudo apt update && sudo apt install -y ros-humble-desktop
-
-# Source ROS 2 setup file
+```
+Source ROS 2 setup file
+```bash
 source /opt/ros/humble/setup.bash
-
-# Create a ROS 2 workspace
+```
+Create a ROS 2 workspace
+```bash
 mkdir -p ~/ros_ws/src && cd ~/ros_ws/src
-
-# Clone the repository
+```
+Clone the repository
+```bash
 git clone https://github.com/yourusername/robot-differential-drive-rpm-ipc.git rse_assignment
-
-# Navigate to the workspace
+```
+Navigate to the workspace
+```bash
 cd ~/ros_ws/
-
-# Install dependencies
+```
+Install dependencies
+```bash
 rosdep install --from-paths src --ignore-src -r -y
-
-# Build the package
+```
+Build the package
+```bash
 colcon build --packages-select rse_assignment
-
-# Source the workspace
+```
+Source the workspace
+```bash
 source install/setup.bash
 ```
 # ✅ Install C++ Dependencies
@@ -97,7 +106,7 @@ To run all components together:
 ```bash
 ros2 launch rse_assignment launch_all.py
 ```
-
+https://github.com/user-attachments/assets/212c8b2c-a5a5-45a0-84e4-4ce8347943e6
 This will:
 1. **Play a ROS bag file** with recorded motion data.🎥
 2. **Run script_a** to calculate RPM values from `cmd_vel`.🏎️
@@ -106,6 +115,7 @@ This will:
 5. **Run seaborn.py** to visualize the data on seaborn GUI.📈
 
 ### 2. Running Components Individually
+https://github.com/user-attachments/assets/332b1370-0dd7-4a27-a6f4-3c308d3a7bbc
 - **Play Bag File**
   ```bash
   ros2 bag play ~/ros_ws/src/rse_assignment/bag_files/rse_assignment.db3
