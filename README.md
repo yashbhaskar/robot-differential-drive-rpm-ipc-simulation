@@ -1,15 +1,20 @@
 # 🤖 Robot Differential Drive RPM Simulation with IPC
 
 Welcome to the **Robot Differential Drive RPM Simulation with IPC**  project! 🚀 This repository contains a set of ROS 2-based programs that calculate and simulate wheel RPM for a differential drive robot, leveraging Inter-Process Communication (IPC) for data exchange.
+This project simulates the RPM (Revolutions Per Minute) control of a differential drive robot using real-time data exchange and inter-process communication (IPC). Built using ROS2, it implements a system for controlling and monitoring wheel RPMs, handling differential drive kinematics, and exchanging data between processes without relying on ROS nodes.
 
 ---
 
 ## 📌 Features
-
 ✅ Computes **wheel RPM** from `cmd_vel` (linear & angular velocity).⏲
 ✅ Implements **Inter-Process Communication (IPC)** for seamless data sharing.⚡
 ✅ Provides **real-time visualization** using Python plotting to analyze robot behavior.📈
 ✅ Data Logging: **Logs RPM data** and related parameters for analysis.💻
+
+✅ Computes **wheel RPM** from `cmd_vel` (linear & angular velocity)  
+✅ Implements **Inter-Process Communication (IPC)** for seamless data sharing ⚡  
+✅ Provides **real-time visualization** using Python plotting 📈  
+✅ Utilizes **ROS 2 Bag Files** for testing with recorded data 🎥  
 
 ---
 
