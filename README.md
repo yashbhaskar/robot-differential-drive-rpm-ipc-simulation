@@ -82,7 +82,7 @@ This will:
   ```bash
   ros2 run rse_assignment script_c.py
   ```
-  - **Run Visualization on GUI through seaborn**
+- **Run Visualization on GUI through seaborn**
   ```bash
   ros2 run rse_assignment seaborn.py
   ```
