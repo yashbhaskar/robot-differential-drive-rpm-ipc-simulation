@@ -166,10 +166,18 @@ This project implements **IPC without ROS 2 topics**, using **shared memory (Boo
 
 ---
 
-## Visualization
+## 📊 Visualization
 The `script_c.py` script generates real-time plots:
 - Wheel RPM vs. Time
 - Velocity Commands vs. RPM
+
+---
+
+## 📈 Visualize Data on the Web
+
+You can monitor the real-time wheel data using the following endpoints:
+- 🌐 REST API Data (JSON Format) 👉 Open in browser: http://localhost:8080/get_wheel_data
+- 📊 Live Dashboard 👉 Open in browser: http://0.0.0.0:8050/
 
 ---
 
