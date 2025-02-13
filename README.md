@@ -2,9 +2,16 @@
 
 Welcome to the **Robot Differential Drive RPM Simulation with IPC**  project! 🚀 This repository contains a set of ROS 2-based programs that calculate and simulate wheel RPM for a differential drive robot, leveraging Inter-Process Communication (IPC) for data exchange.
 
+---
+
 ## 📌 Features
 
-✅ Computes **wheel RPM** from `cmd_vel` (linear & angular velocity).⏲✅ Implements **Inter-Process Communication (IPC)** for seamless data sharing.⚡✅ Provides **real-time visualization** using Python plotting to analyze robot behavior.📈✅ Data Logging: **Logs RPM data** and related parameters for analysis.💻
+✅ Computes **wheel RPM** from `cmd_vel` (linear & angular velocity).⏲
+✅ Implements **Inter-Process Communication (IPC)** for seamless data sharing.⚡
+✅ Provides **real-time visualization** using Python plotting to analyze robot behavior.📈
+✅ Data Logging: **Logs RPM data** and related parameters for analysis.💻
+
+---
 
 ## 📂 Project Structure
 ```
@@ -28,6 +35,8 @@ rse_assignment/
 │── README.md
 ```
 
+---
+
 ## 🚀 Installation & Setup
 ### 🔹 Prerequisites
 Make sure you have the following installed:
@@ -39,7 +48,7 @@ Make sure you have the following installed:
 - **Requests, Dash, Plotly, Numpy (Python Libraries)** 📊
 
 ### 🔹 Setup Instructions
-# ✅ Install ROS Dependencies
+## ✅ Install ROS Dependencies
 Install ROS 2 (if not already installed)
 ```bash
 sudo apt update && sudo apt install -y ros-humble-desktop
@@ -72,7 +81,7 @@ Source the workspace
 ```bash
 source install/setup.bash
 ```
-# ✅ Install C++ Dependencies
+## ✅ Install C++ Dependencies
 Install C++ Compiler and Build Tools:
 ```bash
 sudo apt update && sudo apt install -y build-essential cmake g++ gcc
@@ -90,7 +99,7 @@ cmake ..
 make -j$(nproc)
 sudo make install
 ```
-# ✅ Install Python Dependencies
+## ✅ Install Python Dependencies
 Install Python and Pip:
 ```bash
 sudo apt install -y python3 python3-pip python3-venv
@@ -99,6 +108,8 @@ Use pip to install the required Python packages:
 ```bash
 pip install requests dash plotly numpy matplotlib
 ```
+
+---
 
 ### 🔹 Usage
 ### 1. Launch the System
@@ -159,13 +170,19 @@ The `script_c.py` script generates real-time plots:
 - Wheel RPM vs. Time
 - Velocity Commands vs. RPM
 
+---
+
 ## 🛠️ Future Improvements
 ✨ Add support for **WebSockets-based IPC** for cloud-based monitoring 🌐  
 ✨ Implement **robot control via Joystick/Gamepad** 🎮  
 ✨ Optimize performance for **real-time execution** ⏳
 
+---
+
 ## 👨‍💻 Contributing
 Pull requests are welcome! 🎉 If you have ideas for improvements, feel free to fork and submit PRs.
+
+---
 
 ## 📞 Contact
 📧 Email: ybbhaskar19@gmail.com  
